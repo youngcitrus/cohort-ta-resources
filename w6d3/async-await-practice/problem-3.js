@@ -49,8 +49,8 @@ async function setValue(variable, fetchMovie, movieTitle) {
     console.log(variable);
 }
 
-let x;
-setValue(x, fetchMovie, "harry potter");
+// let x;
+// setValue(x, fetchMovie, "harry potter");
 
 
 // Zoolander was directed by Ben Stiller and released in 2001
