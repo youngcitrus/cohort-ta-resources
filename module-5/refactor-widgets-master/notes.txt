@@ -1,0 +1,18 @@
+Congrats on another assessment!
+
+Schedule:
+Week 15 - Redux (No Assessment)
+Week 16 - REACT SOLO Project
+
+Module 6: 
+Week 17 - Python Introduction (basics but in Python) (+Assessment)
+Week 18 - Flask (Python equivalent to Express) (+Assessment)
+Week 19 - Docker (No Assessment)
+Week 20 - Python Group Project
+
+Module 7 Job Search + Final Project
+Week 21 - 22 Final Capstone Project
+
+Time off
+
+Project review

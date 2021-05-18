@@ -1,0 +1,34 @@
+/* TODO Add site wide styles */
+/* TODO Add site wide styles */
+
+.composition {
+  border: 5px solid #ff5733;
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+}
+
+.div {
+  color: black;
+  background: #c70039;
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid #ff5733;
+}
+
+.thread {
+  background: #ff5733;
+  color: white;
+  border: 5px solid #ffc300;
+  padding: 5px;
+  margin: 5px;
+}
+
+.list {
+  color: #c70039;
+  background: #ffc300;
+  border: 5px solid #c70039;
+  padding: 5px;
+  margin: 5px;
+}
