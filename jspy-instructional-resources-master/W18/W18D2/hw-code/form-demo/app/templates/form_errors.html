@@ -1,0 +1,7 @@
+<ul>
+  {% for field in errors.keys() %}
+    {% for message in errors[field] %}
+      <li>Error in {{ field }}: {{ message }}</li>
+    {% endfor %}
+  {% endfor %}
+</ul>

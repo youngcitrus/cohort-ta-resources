@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('other-styles.css');
+
+h1 {
+	font-family: 'Pacifico', cursive;
+	color: blue;
+}
+
+#second-header {
+	/* font-size: 50vh; */
+	color: orange;
+}
+
+#main-header.large.on {
+	color: red;
+}
+
+div#main-header.header {
+	color: green;
+}
+
+a {
+	color: #000fff;
+	text-decoration: none;
+}
+a:hover {
+	font-family: "Roboto Condensed", sans-serif;
+	color: #4fc3f7;
+	border: 2px solid #4fc3f7;
+}
+
+p::before {
+	content: 'This is a...';
+	color: green;
+}
+
+p::after {
+	content: '...p tag';
+}

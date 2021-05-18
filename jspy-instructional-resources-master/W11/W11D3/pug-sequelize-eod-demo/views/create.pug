@@ -1,0 +1,25 @@
+if errors.length > 0
+  div
+    p The following errors were found:
+    ul
+      each error in errors
+        li= error
+form(action='/create' method='post')
+  input(type='hidden' name="_csrf" value=csrfToken)
+  div
+    label(for='username') Username:
+    input(id='username' name='username' value=username type='text')
+  div
+    label(for='email') Email:
+    input(id='email' class="form-control" name='email' value=email type='email')
+  div
+    label(for='age') Age:
+    input(id='age' name='age' value=age type='number')
+  div
+    label(for='password') Password:
+    input(id='password' name='password' type='password')
+  div
+    label(for='confirmedPassword') Confirm Password:
+    input(id='confirmedPassword' name='confirmedPassword' type='password')
+  div
+    input(type='submit' value="Create User")

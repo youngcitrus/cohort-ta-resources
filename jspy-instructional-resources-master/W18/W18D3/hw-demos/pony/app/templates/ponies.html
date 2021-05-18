@@ -1,0 +1,26 @@
+<a href="{{ url_for('index') }}">Back to index</a>
+<a href="{{ url_for('add_pony')}}">Add a new pony</a>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Birth year</th>
+      <th>Breed</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for pony in ponies %}
+    <tr>
+      <td>{{ pony.name }}</td>
+      <td>{{ pony.birth_year }}</td>
+      <td>{{ pony.breed }}</td>
+      <td>
+        <form method="POST" action="{{ url_for('delete_pony', id=pony.id) }}">
+          <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,26 @@
+{
+	"development": {
+		"username": "pug_user",
+		"password": "password",
+		"database": "pug_user_dev",
+		"host": "127.0.0.1",
+		"dialect": "postgres",
+		"seederStorage": "sequelize"
+	},
+	"test": {
+		"username": "pug_user",
+		"password": "password",
+		"database": "pug_user_dev",
+		"host": "127.0.0.1",
+		"dialect": "postgres",
+		"seederStorage": "sequelize"
+	},
+	"production": {
+		"username": "pug_user",
+		"password": "password",
+		"database": "pug_user_dev",
+		"host": "127.0.0.1",
+		"dialect": "postgres",
+		"seederStorage": "sequelize"
+	}
+}

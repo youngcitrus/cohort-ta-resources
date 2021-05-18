@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Sample Form</title>
+  </head>
+
+  <body>
+    <h1>Sample Form</h1>
+    {% include 'form_errors.html' %}
+    <form action="" method="post" novalidate>
+      {{ form.hidden_tag() }}
+      {{ form.csrf_token }}
+      <p>
+        {{ form.name.label }}
+        {{ form.name(size=32) }}
+      </p>
+      <p>{{ form.submit() }}</p>
+    </form>
+  </body>
+
+</html>

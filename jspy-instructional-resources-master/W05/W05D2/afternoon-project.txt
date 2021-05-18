@@ -1,0 +1,36 @@
+Today's project is relatively short, so let's practice using and making classes. When you're finished with the project, try implementing a scenario that utilizes many classes and their interactions. I've come up with an example below, feel free to use this one, or come up with something that interests you!
+
+Here's an example of a Library (pulling slightly from your homework readings). We could model a scenario where both libraries and people own books and movies. We can lend and receive these items, as well as display information about what is currently in our possession.
+
+Library class
+	- keep track of library specific information (name, address, etc.)
+	- keep track of the books and movies in our possession
+	- able to lend and receive these items
+	- able to display currently available books
+	- able to display currently available movies
+
+CatalogItem class
+	- keep track of basic information of a generic catalog item
+		- title, series, year published, any other generic info
+	- keep track of the owner of the item (this could be a library or a person)
+	- able to change ownership (give your old book to the library, or a movie to your friend)
+
+Book class
+	- extend the CatalogItem class
+	- add information specific to a book (author, number of pages?, anything you want!)
+	
+Movie class
+	- extend the CatalogItem class
+	- add information specific to a movie (rating, runtime?, anything you want!)
+
+Person class
+	- keep track of personal information (name, age, etc.)
+	- keep track of books and movies
+	- able to lend and receive these items (let your friend borrow your favorite movie!)
+	- able to display books in this person's possession (indicate if it is a borrowed book)
+	- able to return borrowed items to their owner (take it out of this person's books and put it into the owner's books, for example)
+
+Build upon this functionality however you choose!
+
+Try defining some of your classes using constructor functions and adding to the prototype, then use the `class` keyword to define some with ES6/ES2015 notation.
+Change up how you are exporting and importing. Use exports.ClassName = ClassName, module.exports = ClassName, and module.exports = { ClassName }. How does that affect how you are importing?
