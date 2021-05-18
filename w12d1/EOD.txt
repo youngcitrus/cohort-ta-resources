@@ -1,0 +1,57 @@
+Authentication Big Picture
+
+- HTTP is stateless
+How do we persist data?
+How do we know a user is the same logged in user?
+
+When we visit amazon.com and log in..
+how does the amazon server know it's us?
+
+
+Cookies
+Key-value pairs stored in the header of the request
+
+Why is this bad?
+Don't store passwords in cookies
+bc someone can snoop on those
+
+Cookies to store session tokens (random bits)
+Users log in for the first time, and the server sends back a session token stored as a cookie for subsequent requests
+We can store this token in the database or through a node package that handles it, and delete it when a user logs out
+Create a new one when a user logs in
+
+Demo github inspect
+
+How do you think databases online store users' passwords?
+
+Don't store passwords directly in the database
+Why not?
+
+
+Use hashing
+What is a hashing function?
+Given an input, generate an output
+
+
+Store a complex password digest from a hashing algorithm in the database
+When a user attempts to login, run their input through the same algorithm
+And check if that matches what's in the database.
+
+Why isn't this enough?
+
+90% of users use the 1000 most common passwords
+
+Salting (pre-pended randomly generated strings between hashing steps)
+Password hashes or digests need to have lots of entropy
+
+Salt is included the password digest
+Generate a random salt
+Use it to create a password digest for a user and store that digest in the database
+When a user logs in, find them by username, get the salt from the password digest
+Use the salt and given password to create another password digest and check if it's the same as the stored one in the database
+
+
+Do not build your own hashing functions
+Trust and use the latest and industry standard/approved hashing functions for cryptography that limit the rate of hash collisions
+
+Some built in libraries but we'll use BCrypt

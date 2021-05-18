@@ -2,6 +2,7 @@ const allReports = [];
 
 // Self Grade Options
 const SELF_GRADE_1 = "Not comfortable at all"; // r
+// const SELF_GRADE_1 = "I'm behind"
 const SELF_GRADE_2 = "Struggled with some concepts"; // r
 const SELF_GRADE_3 = "Have general understanding"; // y
 const SELF_GRADE_4 = "Confident I understand"; // no color
