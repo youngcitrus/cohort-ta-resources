@@ -1,0 +1,18 @@
+div {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+.active {
+  color: rgb(79, 7, 79);
+  font-weight: bold;
+  font-size: 1.2em;
+}
